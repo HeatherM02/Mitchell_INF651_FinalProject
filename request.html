@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer Seeker - Submit a Prayer Request</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="logo.png" alt="Prayer Seeker"></a><p class="page-title">Submit a Prayer Request</p>
+        <!-- need to add submit a prayer request -->
+    </header>
+    <main id="entire-form">
+        <div>
+            <p id="question">
+                How can we pray for you today?
+            </p>
+        </div>
+        <div>
+            <form id='request-form' method="post">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname"></input>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname"></input></br>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city"></input>
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state"></input></br>
+                <label for="request">Prayer Request:</label><br>
+                <textarea id="request" name="request" rows="5" cols="72"></textarea><br>
+                <button id="submit" class="button submit" type="submit">Submit</button>
+                <button class="button"><a href="prayer-wall.html">Go to Prayer Wall</a></button>
+                
+            </form>
+        </div>
+        <div>
+            
+        </div>
+    </main>
+    <script>
+//Defining variables for each value in the form
+
+const submitButton = document.getElementById("submit");
+
+let fname = document.getElementById("fname");
+let lname = document.getElementById("lname");
+let city = document.getElementById("city");
+let state = document.getElementById("state");
+let request = document.getElementById("request");
+let submit = document.getElementById("submit");
+let entireForm = document.getElementById("entire-form");
+
+//Defining message for alert to bring back request for the user in the form
+
+submitButton.addEventListener("click", function message() {
+  alert(`Thank you. Your request has been received. 
+  First Name: ${fname.value}
+  Last Name: ${lname.value}
+  City ${city.value}
+  State: ${state.value}
+  Request: ${request.value}`);
+});
+</script>
+</body>
+</html>

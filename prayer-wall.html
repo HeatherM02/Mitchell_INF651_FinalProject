@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prayer Seeker - Submit a Prayer Request</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img src="logo.png" alt="Prayer Seeker" /></a>
+      <p class="page-title">Prayer Wall</p>
+    </header>
+    <main>
+      <div class="request">
+        <p><b>John Smith</b> - Oklahoma City, OK</p>
+        <p>
+          Asking for prayers for safe travels on a road trip up to Maine this
+          weekend.
+        </p>
+        <button class="button prayer-btn">
+          <span id="entryNumber1">87</span> Praying
+        </button>
+        <button class="button prayer-btn prayer-btn1">I will pray</button>
+      </div>
+      <div class="request">
+        <p><b>Jane Johnson</b> - Hays, KS</p>
+        <p>
+          Prayers needed for guidance on a doctor's appointment this Wednesday.
+        </p>
+        <button class="button prayer-btn">
+          <span id="entryNumber2">52</span> Praying
+        </button>
+        <button class="button prayer-btn prayer-btn2">I will pray</button>
+      </div>
+      <div class="request">
+        <p><b>Sally Jones</b> - Omaha, NE</p>
+        <p>Important meeting on Monday that I am asking for prayers for.</p>
+        <button class="button prayer-btn">
+          <span id="entryNumber3">34</span> Praying
+        </button>
+        <button class="button prayer-btn prayer-btn3">I will pray</button>
+      </div>
+      <div id="newEntry request"></div>
+    </main>
+    <script>
+      //Define variables for buttons on prayer wall
+      let clicker1 = document.getElementById("prayer-btn1");
+      let counter1 = document.getElementById("entryNumber1");
+      let clicker2 = document.getElementById("prayer-btn2");
+      let counter2 = document.getElementById("entryNumber2");
+      let clicker3 = document.getElementById("prayer-btn3");
+      let counter3 = document.getElementById("entryNumber3");
+
+      //Add event listeners for clicking I will pray buttons for counting
+
+      clicker1.addEventListener("click", function () {
+        counter1.innerHTML = "88";
+      });
+
+      clicker2.addEventListener("click", function () {
+        counter2.innerHTML = "53";
+      });
+
+      clicker3.addEventListener("click", function () {
+        counter3.textContent = "blue";
+      });
+    </script>
+  </body>
+</html>

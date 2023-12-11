@@ -1,0 +1,49 @@
+Final Project Report
+1. Development - HTML and CSS
+I started with the structure of each of the pages, getting the HTML worked out in 
+each of the documents and making sure it appeared structurally how it I would expect it
+to. Then I added in the CSS elements and configured those to look close to what I 
+had in my proposal. One challenge I ran into with this was with screen sizes, my title for
+the page was not appearing in line with my page logo depending on the screen size. However, due
+to time constraints, I decided to keep it that way, because it was not distracting to the overall
+functionality of the website.
+
+2. Challenges - Javascript
+ - The first challenge that I faced was that the event listener was not working for my form.
+ I was trying to get my form to go through but every time I tried something it would not work.
+ I resolved this by searching through the Internet and finally realized that I had my script tags
+ in the wrong place. I had placed them in the head tag instead of right before the closing body 
+ tag, causing the Javascript not to run properly.
+ - The second challenge was that I could not get my form information to process over from my submit.html 
+ page to my prayer-wall.html page. I tried several ways to accomplish this. First I tried to do this as 
+ explained in my proposal, where each request would be saved as an object, with each new object being part 
+ of a class but could not figure out how to make that work very well without someting to store the values. 
+ I tried using something called local storage but could not get that to work either, which is why I settled 
+ on reading the user's request back to them in the alert.
+ - I had also outlined in my proposal that I would replace the form with a message saying "Thank you for 
+ submitting the form" and then there would be a link back to the prayer wall page. At this point I kept 
+ getting a Page Not Found error whenever I hit the Submit button on my form, which was another reason why 
+ I went with the alert button and put a link to the prayer wall at the bottom of the form.
+- On the alert button itself, when I first put it together, my input values were coming up in the alert as 
+"HTML Ojbect Input Value" instead of the value that I had actually input. I found a post on Stack Overflow 
+that explained that I needed to add ".value" to the end of my variable names to get my input values to show 
+up in the alert message.
+ - Another challenge was that I had multiple event listeners on my external script.js file and it would only read
+ the first event listener and not pay attention to the other one. To resolve this, I had to split up my Javascript
+ into the script tags on each of the HTML pages that they were specifically for instead of having all of the Javascript
+ put into the external script.js file.
+ - The next issue I faced was getting the counter to work when I clicked the "I will pray" button. It was supposed
+ to add the number to the button next to it, indicating that one more person was praying for that request. I started off by 
+ trying to change the number entirely but was not able to change it with the event listener. Then I tried defining variable
+ names instead and adding the event listeners to those and then changing the variable names and double checkiing the spelling. I 
+ also tried moving the Javascript back and forth between in the script tag on the prayer-wall.html page and the script.js 
+ page but it did not seem to work on either and unfortunately, due to time constraints, I was not able to get beyond this.
+
+ 3. Summary
+ Overall, I do have all of the links working successfully within the website. For submitting the prayer request, the 
+ Javascript in the form does work in that it responds back in the alert with what you typed into the form, providing labels
+ for each of the input values as well. I still included the Javascript for the event listeners for the buttons for the counters
+ to increase the number of people listed on the left button every time the "I will pray" button on the right on my prayer wall is
+ clicked since I did intend on making those work, but I just could not figure out what happened.
+
+ --Heather Mitchell['=]
